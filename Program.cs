@@ -9,7 +9,7 @@ namespace VariablesCS
             int numberOfCupsOfCoffee = 2;
             string fullName = "Joseph Myers";
             var today = DateTime.Today;
-            Console.WriteLine("Welcome to C#");
+            Console.WriteLine("{0} {1} {2}", numberOfCupsOfCoffee, fullName, today);
         }
     }
 }
