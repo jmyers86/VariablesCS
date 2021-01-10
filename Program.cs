@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace VariablesCS
 {
@@ -8,8 +8,9 @@ namespace VariablesCS
         {
             int numberOfCupsOfCoffee = 2;
             string fullName = "Joseph Myers";
-            var today = DateTime.Today;
-            Console.WriteLine("{0} {1} {2}", numberOfCupsOfCoffee, fullName, today);
+            var today = DateTime.Now;
+            string dailycups = "Cups of coffee drank today!";
+            Console.WriteLine("{0} {1} {2} {3}", numberOfCupsOfCoffee, dailycups, fullName, today);
         }
     }
 }
