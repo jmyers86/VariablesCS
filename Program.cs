@@ -10,7 +10,7 @@ namespace VariablesCS
             string fullName = "Joseph Myers";
             var today = DateTime.Now;
             string dailycups = "Cups of coffee drank today!";
-            string input = null;// I think this is a variable used to tell whether or not the user has entered input
+            string userName = null;// I think this is a variable used to tell whether or not the user has entered input
             bool good = false;
 
             Console.WriteLine("{0} {1} {2} {3}", numberOfCupsOfCoffee, dailycups, fullName, today);
@@ -18,12 +18,12 @@ namespace VariablesCS
 
             // I am piecing this together from things I found online. 
             Console.WriteLine("What's your name?:");
-            input = Console.ReadLine();
-            good = !string.IsNullOrEmpty(input); //I think the '!' is denoting the opposite of true/false. I don't quite understand what is modifies before 'string'.
+            userName = Console.ReadLine();
+            good = !string.IsNullOrEmpty(userName); //I think the '!' is denoting the opposite of true/false. I don't quite understand what is modifies before 'string'.
             if (!good)
                 Console.WriteLine("Please tell me your name!");
             if (good)
-                Console.WriteLine($"Hello, {input}!");
+                Console.WriteLine($"Hello, {userName}!");
 
 
 
