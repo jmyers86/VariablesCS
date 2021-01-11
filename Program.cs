@@ -17,6 +17,8 @@ namespace VariablesCS
             string firstNumberAsString = null;
             string secondNumberAsString = null;
 
+
+
             Console.WriteLine("{0} {1} {2} {3}", numberOfCupsOfCoffee, dailycups, fullName, today);
             Console.WriteLine("Let's get to know you a bit better...");
 
@@ -24,11 +26,13 @@ namespace VariablesCS
             // I am piecing this together from things I found online. 
             Console.WriteLine("What's your name?:");
             userName = Console.ReadLine();
-            good = !string.IsNullOrEmpty(userName); //I think the '!' is denoting the opposite of true/false. I don't quite understand what is modifies before 'string'.
+            good = !string.IsNullOrEmpty(userName); //I think the '!' is denoting the opposite of true/false. I don't quite understand what is modified before 'string'.
             if (!good)
                 Console.WriteLine("Please tell me your name!"); //I'll fix this later. Got to move on.
             if (good)
                 Console.WriteLine($"Hello, {userName}!");
+
+
 
             Console.WriteLine("Gimme a number!");
             firstNumberAsString = Console.ReadLine();
